@@ -1,0 +1,5 @@
+#root :local(.MuiInputOverride) {
+  &:where(.MuiInput-root):before {
+    @apply border-b-2 border-solid  border-b-gray-main border-0;
+  }
+}

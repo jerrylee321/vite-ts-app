@@ -1,0 +1,27 @@
+#root :local(.MuiTableOverride) {
+  &:where(.MuiTable-root) {
+    & thead {
+      & [type="checkbox"] {
+        @apply text-independence-main;
+      }
+      & tr {
+        @apply border-b-[1px] border-0 border-solid border-b-gray-main;
+      }
+      & .Mui-active .MuiTableSortLabel-icon {
+        @apply text-secondary-main;
+      }
+    }
+
+    & tbody {
+      & tr:hover {
+        & [data-sticky-last-left-td] {
+          @apply text-gray-light;
+        }
+        & [data-sticky-last-right-td] {
+          @apply text-gray-light;
+        }
+        @apply text-gray-light cursor-pointer;
+      }
+    }
+  }
+}

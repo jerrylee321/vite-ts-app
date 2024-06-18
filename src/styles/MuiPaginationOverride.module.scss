@@ -1,0 +1,5 @@
+#root :local(.MuiPaginationOverride) {
+  & .MuiPagination-ul {
+    @apply flex-nowrap;
+  }
+}

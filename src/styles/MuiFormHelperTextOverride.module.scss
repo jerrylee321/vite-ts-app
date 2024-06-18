@@ -1,0 +1,5 @@
+#root :local(.MuiFormHelperTextOverride) {
+  &:where(.MuiFormHelperText-root) {
+    @apply ml-0 text-independence-main;
+  }
+}

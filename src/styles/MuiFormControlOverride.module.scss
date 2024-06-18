@@ -1,0 +1,13 @@
+#root :local(.MuiFormControlLabelOverride) {
+  &:where(.MuiFormControl-root) {
+    & textarea {
+      @apply border-gray-main;
+    }
+    &.required label::after {
+      @apply text-error-main content-['_*'];
+    }
+    & label.required::after {
+      @apply text-error-main content-['_*'];
+    }
+  }
+}

@@ -1,0 +1,16 @@
+#root :local(.MuiSwitchOverride) {
+  & .MuiSwitch-thumb {
+    @apply w-3 h-3 m-1 shadow-none;
+  }
+  & .MuiSwitch-switchBase.Mui-checked {
+    @apply text-primary-main;
+
+    &:hover {
+      @apply bg-primary-main/10;
+    }
+  }
+
+  & .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+    @apply bg-warning-light;
+  }
+}

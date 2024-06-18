@@ -1,0 +1,5 @@
+#root :local(.MuiTextFieldOverride) {
+  &:where(.MuiTextField-root) {
+    @apply placeholder:text-independence-main;
+  }
+}

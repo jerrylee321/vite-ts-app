@@ -1,0 +1,5 @@
+#root :local(.MuiListItemIconOverride) {
+  &:where(.MuiListItemIcon-root) {
+    @apply text-primary-main min-w-11;
+  }
+}

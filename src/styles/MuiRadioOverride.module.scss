@@ -1,0 +1,5 @@
+#root :local(.MuiRadioOverride) {
+  &:where(.MuiRadio-root) {
+    @apply mr-[0.625rem];
+  }
+}

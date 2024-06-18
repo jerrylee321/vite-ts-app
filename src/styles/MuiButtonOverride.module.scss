@@ -1,0 +1,11 @@
+#root :local(.MuiButtonOverride) {
+  &:where(.MuiButton-root) {
+    @apply rounded-full shadow-general px-10 font-bold disabled:text-gray-main disabled:border-gray-main;
+  }
+  & .MuiButton-textPrimary {
+    @apply bg-common-white;
+  }
+  & .MuiButton-contained {
+    @apply shadow-general;
+  }
+}

@@ -1,0 +1,5 @@
+#root :local(.MuiInputBaseOverride) {
+  & .MuiInputBase-input {
+    @apply placeholder:italic;
+  }
+}

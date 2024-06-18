@@ -1,0 +1,8 @@
+#root :local(.MuiInputLabelOverride) {
+  &:where(.MuiInputLabel-root) {
+    @apply text-xs text-metalicBlue-main;
+  }
+  & .MuiInputLabel-shrink {
+    @apply translate-y-[1.5px] scale-100;
+  }
+}

@@ -1,0 +1,8 @@
+.simplebar-track {
+  min-height: 1.5rem;
+}
+
+.simplebar-track .simplebar-scrollbar::before {
+  background-color: #bdbdbd;
+  border-radius: 50rem;
+}

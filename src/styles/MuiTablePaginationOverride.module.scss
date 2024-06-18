@@ -1,0 +1,20 @@
+#root :local(.MuiTablePaginationOverride) {
+  & .MuiTablePagination-toolbar {
+    @apply flex-row-reverse gap-[0.625rem] p-0;
+  }
+  & .MuiTablePagination-select {
+    @apply hidden;
+  }
+  & .MuiTablePagination-spacer {
+    @apply hidden;
+  }
+  & .MuiTablePagination-input {
+    @apply hidden;
+  }
+  & .MuiTablePagination-selectLabel {
+    @apply hidden;
+  }
+  & .MuiTablePagination-displayedRows {
+    @apply text-base leading-4;
+  }
+}

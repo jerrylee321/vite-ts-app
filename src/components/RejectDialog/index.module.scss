@@ -1,0 +1,8 @@
+#root :local(.MuiInputLabelOverride) {
+  &:where(.MuiInputLabel-root) {
+    @apply text-lg text-actionButton-alternative font-bold;
+  }
+  & .MuiInputLabel-shrink {
+    @apply translate-y-[1.5px] scale-100;
+  }
+}

@@ -1,0 +1,5 @@
+#root :local(.MuiBadgeOverride) {
+  & .MuiBadge-colorSecondary {
+    @apply bg-[#676766];
+  }
+}

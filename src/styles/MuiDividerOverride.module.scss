@@ -1,0 +1,5 @@
+#root :local(.MuiDividerOverride) {
+  &:where(.MuiDivider-root) {
+    @apply border-0 border-b-2;
+  }
+}

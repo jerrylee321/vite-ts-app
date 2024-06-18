@@ -1,0 +1,75 @@
+#root :local(.drawerItemButton) {
+  &:where(.MuiListItemButton-root) {
+    &.Mui-selected {
+      @apply bg-inherit text-warning-main;
+      & .MuiListItemIcon-root {
+        @apply text-inherit;
+      }
+      & .MuiListItemIcon-primary {
+        @apply text-inherit;
+      }
+    }
+  }
+}
+
+#root :local(.drawerItemLink) {
+  &:where(.MuiListItemButton-root) {
+    &:hover {
+      &:not(.Mui-selected) {
+        @apply bg-warning-main;
+        & * {
+          @apply text-common-white;
+        }
+        svg {
+          @apply fill-white;
+          @apply stroke-white;
+        }
+      }
+    }
+  }
+}
+
+:local(.drawerItemIcon) {
+  #root &:where(.MuiListItemIcon-root) {
+    > svg {
+      @apply fill-sidemenu-icon-normal;
+      @apply stroke-sidemenu-icon-normal;
+    }
+  }
+  #root &:where(.MuiListItemIcon-root.drawerItemIcon--selected) {
+    > svg {
+      @apply fill-sidemenu-icon-active;
+      @apply stroke-sidemenu-icon-active;
+    }
+  }
+}
+
+:local(.drawerItemText) {
+  #root &:where(.MuiListItemText-root) {
+    & .MuiListItemText-primary {
+      @apply text-sidemenu-text-normal;
+    }
+  }
+  #root .Mui-selected &:where(.MuiListItemText-root) {
+    & .MuiListItemText-primary {
+      @apply text-sidemenu-text-active;
+      @apply font-bold;
+    }
+  }
+}
+
+#root :local(.drawerItemMainText) {
+  &:where(.MuiListItemText-root) {
+    & .MuiListItemText-primary {
+      @apply text-[13px] leading-[15px] font-bold;
+    }
+  }
+}
+
+#root :local(.drawerItemSubMenuText) {
+  &:where(.MuiListItemText-root) {
+    & .MuiListItemText-primary {
+      @apply text-[11px] leading-[13px] font-normal;
+    }
+  }
+}

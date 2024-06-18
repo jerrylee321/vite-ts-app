@@ -1,0 +1,17 @@
+#root :local(.formSmallLabel) {
+  &.MuiInputLabel-root {
+    @apply relative text-[13px];
+    &.Mui-focused {
+      @apply text-primary-main;
+      &.Mui-error {
+        @apply text-error-main;
+      }
+    }
+  }
+  &.MuiInputLabel-shrink {
+    @apply translate-x-[1.5px] scale-100;
+  }
+  & .MuiInputLabel-asterisk {
+    @apply text-error-main;
+  }
+}

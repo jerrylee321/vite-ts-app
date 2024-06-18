@@ -1,0 +1,5 @@
+#root :local(.MuiButtonBaseOverride) {
+  &:where(.MuiButtonBase-root) {
+    @apply text-independence-main;
+  }
+}

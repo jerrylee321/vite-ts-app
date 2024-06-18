@@ -1,0 +1,11 @@
+#root :local(.MuiCardHeaderOverride) {
+  &:where(.MuiCardHeader-root) {
+    @apply pb-0;
+  }
+  & .MuiCardHeader-title {
+    @apply font-semibold;
+  }
+  & .MuiCardHeader-action {
+    @apply m-0;
+  }
+}

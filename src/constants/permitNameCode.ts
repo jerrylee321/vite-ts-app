@@ -1,0 +1,5 @@
+export enum DummyPermitNameCode {
+  ADMIN_ALL = "__ADMIN_ALL",
+  ADMIN_PREPARER = "__ADMIN_PREPARER",
+  ADMIN_APPROVER = "__ADMIN_APPROVER",
+}

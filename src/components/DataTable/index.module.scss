@@ -1,0 +1,22 @@
+#root :local(.dataTableSortLabel) {
+  &:not(.Mui-active) .MuiTableSortLabel-icon {
+    @apply opacity-50;
+  }
+
+  &.Mui-active .MuiTableSortLabel-icon {
+    @apply text-secondary-main;
+  }
+}
+
+#root :local(.dataTable) {
+  &.MuiTable-root {
+    & .MuiCheckbox-root {
+      &.Mui-checked .MuiSvgIcon-root {
+        @apply text-primary-main;
+      }
+      &.MuiCheckbox-indeterminate .MuiSvgIcon-root {
+        @apply text-primary-main;
+      }
+    }
+  }
+}

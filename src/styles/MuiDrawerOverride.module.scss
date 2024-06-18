@@ -1,0 +1,5 @@
+#root :local(.MuiDrawerOverride) {
+  & .MuiDrawer-paperAnchorLeft {
+    @apply border-r-0 shadow-drawer;
+  }
+}

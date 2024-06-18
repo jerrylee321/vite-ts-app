@@ -1,0 +1,5 @@
+#root :local(.MuiSelectOverride) {
+  &:where(.MuiSelect-root) {
+    @apply before:border-2 before:border-solid before:border-gray-main;
+  }
+}

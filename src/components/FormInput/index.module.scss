@@ -1,0 +1,110 @@
+#root :local(.formSmallLabel) {
+  &.MuiInputLabel-root {
+    @apply relative text-[13px];
+    &.Mui-focused {
+      @apply text-primary-main;
+      &.Mui-error {
+        @apply text-error-main;
+      }
+    }
+  }
+  &.MuiInputLabel-shrink {
+    @apply translate-x-[1.5px] scale-100;
+  }
+  & .MuiInputLabel-asterisk {
+    @apply text-error-main;
+  }
+}
+
+#root :local(.formInput) {
+  &.MuiInput-root {
+    @apply mt-0;
+    &:before {
+      @apply border-b-2 border-solid border-b-gray-main border-0;
+    }
+    &:after {
+      @apply border-b-2 border-solid border-b-primary-main border-0;
+    }
+    &.Mui-error:before {
+      @apply border-b-error-main;
+    }
+    &.Mui-error:after {
+      @apply border-b-error-main;
+    }
+  }
+  & .MuiInputBase-input {
+    @apply placeholder:italic;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"] :global(::-webkit-inner-spin-button),
+  input[type="number"] :global(::-webkit-outer-spin-button) {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+#root :local(.formInputHelperText) {
+  &.MuiFormHelperText-root {
+    @apply ml-0 text-independence-main;
+    &.Mui-error {
+      @apply text-error-main;
+    }
+  }
+}
+
+#root :local(.formLargeLabel) {
+  &.MuiInputLabel-root {
+    @apply relative text-[18px];
+    &.Mui-focused {
+      @apply text-primary-main;
+      &.Mui-error {
+        @apply text-error-main;
+      }
+    }
+  }
+  &.MuiInputLabel-shrink {
+    @apply translate-x-[1.5px] scale-100;
+  }
+  & .MuiInputLabel-asterisk {
+    @apply text-error-main;
+  }
+}
+
+#root :local(.formTextAreaInput) {
+  &.MuiInput-root {
+    &:before {
+      @apply border-b-2 border-solid border-b-gray-main border-0;
+    }
+    &:after {
+      @apply border-b-2 border-solid border-b-primary-main border-0;
+    }
+    &.Mui-error:before {
+      @apply border-b-error-main;
+    }
+    &.Mui-error:after {
+      @apply border-b-error-main;
+    }
+  }
+  & .MuiInputBase-input {
+    @apply placeholder:italic;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"] :global(::-webkit-inner-spin-button),
+  input[type="number"] :global(::-webkit-outer-spin-button) {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+#root :local(.formTextAreaHelperText) {
+  &.MuiFormHelperText-root {
+    @apply ml-0 text-independence-main;
+    &.Mui-error {
+      @apply text-error-main;
+    }
+  }
+}

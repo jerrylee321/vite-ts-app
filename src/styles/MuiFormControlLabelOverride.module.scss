@@ -1,0 +1,5 @@
+#root :local(.MuiFormControlLabelOverride) {
+  & .MuiFormControlLabel-label {
+    @apply text-independence-main;
+  }
+}

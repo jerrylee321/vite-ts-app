@@ -1,0 +1,5 @@
+#root :local(.MuiCardOverride) {
+  &:where(.MuiCard-root) {
+    @apply shadow-general rounded-lg;
+  }
+}

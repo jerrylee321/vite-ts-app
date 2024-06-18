@@ -1,0 +1,31 @@
+#root :local(.formInput) {
+  &.MuiInput-root {
+    &:before {
+      @apply border-b-2 border-solid border-b-gray-main border-0;
+    }
+    &:after {
+      @apply border-b-2 border-solid border-b-primary-main border-0;
+    }
+    &.Mui-error:before {
+      @apply border-b-error-main;
+    }
+    &.Mui-error:after {
+      @apply border-b-error-main;
+    }
+  }
+  & .MuiInputBase-input {
+    @apply placeholder:italic;
+  }
+}
+
+#root :local(.formCheckboxWithInputHelperText) {
+  &.MuiFormHelperText-root {
+    @apply -mt-[1px] ml-0 text-independence-main;
+  }
+}
+
+#root :local(.formCheckboxWithInputHelperTextError) {
+  &.MuiFormHelperText-root {
+    @apply -mt-[1px] ml-0 text-error-main;
+  }
+}

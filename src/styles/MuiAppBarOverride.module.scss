@@ -1,0 +1,5 @@
+#root :local(.MuiAppBarOverride) {
+  &:where(.MuiAppBar-root) {
+    @apply shadow-general;
+  }
+}

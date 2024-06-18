@@ -1,0 +1,5 @@
+#root :local(.MuiPaginationItemOverride) {
+  & .MuiPagination-icon {
+    @apply text-[2.5rem];
+  }
+}

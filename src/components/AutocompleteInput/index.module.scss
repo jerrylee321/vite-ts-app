@@ -1,0 +1,85 @@
+#root :local(.formInputLabel) {
+  &.MuiInputLabel-root {
+    @apply text-[13px];
+    &.Mui-focused {
+      @apply text-primary-main;
+      &.Mui-error {
+        @apply text-error-main;
+      }
+    }
+  }
+  &.MuiInputLabel-shrink {
+    @apply scale-100;
+  }
+  & .MuiInputLabel-asterisk {
+    @apply text-error-main;
+  }
+}
+
+#root :local(.formInput) {
+  &.MuiTextField-root {
+    & .MuiInputBase-root {
+      &:before {
+        @apply border-b-2 border-solid border-b-gray-main border-0;
+      }
+
+      &:after {
+        @apply border-b-2 border-solid border-b-primary-main border-0;
+      }
+
+      &.Mui-error:before {
+        @apply border-b-error-main;
+      }
+      &.Mui-error:after {
+        @apply border-b-error-main;
+      }
+    }
+
+    & .MuiInputBase-input {
+      @apply placeholder:italic;
+    }
+
+    > .MuiFormHelperText-root {
+      @apply mt-3 text-independence-main;
+    }
+
+    > .MuiFormHelperText-root.Mui-error {
+      @apply mt-3 text-error-main;
+    }
+  }
+}
+
+#root :local(.formCheckbox) {
+  &.MuiCheckbox-root {
+    @apply text-cyanBlue-main py-1;
+  }
+}
+
+#root :local(.formButton) {
+  &.MuiButton-root {
+    @apply text-cyanBlue-main font-bold;
+  }
+}
+
+#root :local(.formItem) {
+  &.MuiAutocomplete-option {
+    @apply p-0;
+  }
+  &.MuiAutocomplete-option[aria-selected="true"] {
+    @apply bg-white;
+
+    &.Mui-focused {
+      @apply bg-gray-200;
+    }
+  }
+}
+
+#root :local(.formSelectedItem) {
+  &.MuiChip-root {
+    @apply bg-lavanderIndigo-main text-lavanderIndigo-contrastText font-black px-1;
+
+    > .MuiSvgIcon-root {
+      @apply text-lavanderIndigo-contrastText;
+    }
+  }
+}

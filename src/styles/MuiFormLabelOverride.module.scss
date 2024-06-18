@@ -1,0 +1,8 @@
+#root :local(.MuiFormLabelOverride) {
+  & .Mui-asterisk {
+    @apply text-error-main;
+  }
+  & .MuiFormLabel-asterisk {
+    @apply text-error-main;
+  }
+}

@@ -1,0 +1,7 @@
+#root :local(.otpInput) {
+  &.MuiInputBase-root.MuiInput-root {
+    &:after {
+      @apply content-[''] border-solid border-2 border-transparent border-b-auth-otp-input;
+    }
+  }
+}

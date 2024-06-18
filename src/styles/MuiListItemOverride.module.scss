@@ -1,0 +1,29 @@
+#root :local(.MuiListItemOverride) {
+  &:where(.MuiListItem-root) {
+    &:hover {
+      & .MuiListItemIcon-root {
+        @apply text-inherit;
+      }
+      & .MuiListItemText-root {
+        @apply text-inherit;
+      }
+      &:not(.Mui-selected) * {
+        @apply text-common-white;
+      }
+      @apply bg-warning-main text-common-white;
+    }
+    &.Mui-selected {
+      & .MuiListItemIcon-root {
+        @apply text-inherit;
+      }
+      & .MuiListItemIcon-primary {
+        @apply text-inherit;
+      }
+      @apply bg-inherit text-warning-main;
+    }
+    &:last-of-type {
+      @apply mb-0;
+    }
+    @apply rounded my-2;
+  }
+}
